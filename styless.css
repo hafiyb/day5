@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --sect-pad: 0 188px;
+    --font-para: 20px;
+    --font-title: 42px;
+    --font-small: 13px;
+
+    --color-main: #5F5FFD;
+    --color-sec: white;
+    --color-ter: #2E2E46;
+
+}
+
+.flexrow{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexcol{
+    display: flex;
+    flex-direction: column;
+}
+
+.justcenter{
+    justify-content: center;
+}
+
+.justspace{
+    justify-content: space-between;
+}
+
+.justaround{
+    justify-content: space-around;
+}
+
+.juststart{
+    justify-content: flex-start;
+}
+
+.aligncenter{
+    align-items: center;
+}
+
+.button{
+    background-color: white;
+    
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+p{
+    font-size: var(--font-para);
+}
+
+h2{
+    margin: 0 0 70px 0;
+    font-size: var(--font-title);
+}
+
+h5{
+    margin: 60px 0 0 0;
+}
+
+.sect-text{
+    margin: 15px 0;
+    font-size: var(--font-para);
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    background-color: #5F5FFD;
+}
+
+#banner{
+    padding: 78px 188px 0 188px;
+    color: var(--color-sec);
+    width: 100%;
+
+}
+
+header ul{
+    list-style-type: none;
+    width: 600px;
+}
+
+header ul a{
+    font-size: var(--font-small);
+    text-decoration: none;
+    color: var(--color-sec);
+}
+
+header{
+    height: 70px;
+    width: 100%;
+    background-color: var(--color-main);
+    padding: var(--sect-pad);
+    color: white;
+    position: fixed;
+}
+
+#banner-left{
+    width:50%;
+    height: 700px;
+}
+
+#banner-left h1{
+    font-size: 60px;
+}
+
+#banner-left p{
+    margin: 40px 0;
+}
+
+#button1{
+    height: 70px;
+    width: 390px;
+    line-height: 70px;
+    text-align: center;
+    color: var(--color-main);
+}
+
+/* img{
+    width: 800px;
+    height: 800px;
+} */
+
+#banner-img{
+    width: 50%;
+    height: 600px;
+    background-image: url(images/slide_1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+#about-us{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-sec);
+    padding: var(--sect-pad);
+}
+
+#about-us div{
+    width: 50%;
+    height: 500px;
+}
+
+#about-us h5{
+    color: var(--color-main);
+}
+
+#about-us-img{
+    background-image: url(images/slide_2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#our-approach{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-main);
+}
+
+#white-box{
+    height: 200px;
+    width: 900px;
+    background-color: white;
+    position: absolute;
+    left: 680px;
+    top: 0px;
+    z-index: 0;
+}
+
+#whitebox{
+    background-color: white;
+    height: 200px;
+    }
+
+#whitebox h2{
+    line-height: 200px;
+    padding: 0 0 0 50px;
+}
+
+.approbox{
+    width: 50%;
+    height: 500px;
+    padding: 0 0 30px 188px;
+}
+
+.approbox2{
+    width: 50%;
+    height: 100%;
+    padding: 0 0 30px 0;
+}
+
+#approtext{
+    padding: 0 188px 30px 30px;
+}
+
+
+
+#our-approach-img{
+    background-image: url(images/slide_3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#our-approach p, #our-approach h5{
+    color: var(--color-sec);
+}
+
+#clients{
+    width: 100%;
+    height: 100%;
+    padding: var(--sect-pad);
+    background-color: white;
+}
+
+.cards{
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cards img{
+    width: 100%;
+    height: 100%;
+}
+
+#contact{
+    width: 100%;
+    height: 100%;
+    padding: var(--sect-pad);
+    background-color: var(--color-ter);
+}
+
+#contact h2, #contact p{
+    color: var(--color-sec);
+}
+
+#con-left{
+    width: 30%;
+}
+
+#con-mid{
+    width: 600px;
+    flex-wrap: wrap;
+    color: var(--color-sec);
+    font-size: var(--font-small);
+}
+
+#con-name{
+    width:200px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid white;
+}
+
+#con-mail{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid white;
+}
+
+#con-mess{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin: 20px 0;
+    border-bottom: 1px solid white;
+}
+
+#con-right{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 20px;
+    font-size: var(--font-small);
+}
+
+
+
